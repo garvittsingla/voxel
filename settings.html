@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings - Voxel</title>
+    <link rel="stylesheet" href="settings.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <video id="bg-video" autoplay muted loop>
+        <source src="video.mp4" type="video/mp4">
+    </video>
+    
+    <div class="overlay"></div>
+    
+    <div class="container">
+        <a href="index.html" class="back-btn">← BACK</a>
+        
+        <header>
+            <h1 class="page-title">SETTINGS</h1>
+            <p class="page-subtitle">CONFIGURE YOUR EXPERIENCE</p>
+        </header>
+        
+        <div class="settings-container">
+            <div class="settings-section">
+                <h2 class="section-title">GRAPHICS</h2>
+                <div class="setting-item">
+                    <label>RESOLUTION</label>
+                    <select class="setting-select">
+                        <option>1920x1080</option>
+                        <option>1366x768</option>
+                        <option>1280x720</option>
+                        <option>1024x768</option>
+                    </select>
+                </div>
+                <div class="setting-item">
+                    <label>QUALITY</label>
+                    <div class="quality-options">
+                        <button class="quality-btn active">LOW</button>
+                        <button class="quality-btn">MEDIUM</button>
+                        <button class="quality-btn">HIGH</button>
+                        <button class="quality-btn">ULTRA</button>
+                    </div>
+                </div>
+                <div class="setting-item">
+                    <label>FULLSCREEN</label>
+                    <div class="toggle-switch">
+                        <input type="checkbox" id="fullscreen" checked>
+                        <span class="slider"></span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="settings-section">
+                <h2 class="section-title">AUDIO</h2>
+                <div class="setting-item">
+                    <label>MASTER VOLUME</label>
+                    <div class="volume-control">
+                        <input type="range" class="volume-slider" min="0" max="100" value="75">
+                        <span class="volume-value">75%</span>
+                    </div>
+                </div>
+                <div class="setting-item">
+                    <label>MUSIC VOLUME</label>
+                    <div class="volume-control">
+                        <input type="range" class="volume-slider" min="0" max="100" value="60">
+                        <span class="volume-value">60%</span>
+                    </div>
+                </div>
+                <div class="setting-item">
+                    <label>SFX VOLUME</label>
+                    <div class="volume-control">
+                        <input type="range" class="volume-slider" min="0" max="100" value="80">
+                        <span class="volume-value">80%</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="settings-section">
+                <h2 class="section-title">CONTROLS</h2>
+                <div class="setting-item">
+                    <label>MOUSE SENSITIVITY</label>
+                    <div class="sensitivity-control">
+                        <input type="range" class="sens-slider" min="1" max="10" value="5">
+                        <span class="sens-value">5</span>
+                    </div>
+                </div>
+                <div class="setting-item">
+                    <label>INVERT Y-AXIS</label>
+                    <div class="toggle-switch">
+                        <input type="checkbox" id="invert-y">
+                        <span class="slider"></span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="settings-actions">
+                <button class="action-btn save">SAVE SETTINGS</button>
+                <button class="action-btn reset">RESET TO DEFAULT</button>
+            </div>
+        </div>
+    </div>
+
+    
+</body>
+</html>

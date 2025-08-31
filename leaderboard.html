@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaderboard - Voxel</title>
+    <link rel="stylesheet" href="leaderboard.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <video id="bg-video" autoplay muted loop>
+        <source src="video.mp4" type="video/mp4">
+    </video>
+    
+    <div class="overlay"></div>
+    
+    <div class="container">
+        <a href="index.html" class="back-btn">← BACK</a>
+        
+        <header>
+            <h1 class="page-title">LEADERBOARD</h1>
+            <p class="page-subtitle">TOP VOXEL WARRIORS</p>
+        </header>
+        
+        <div class="leaderboard-container">
+            <div class="leaderboard-tabs">
+                <button class="tab active" onclick="showTab('weekly')">WEEKLY</button>
+                <button class="tab" onclick="showTab('monthly')">MONTHLY</button>
+                <button class="tab" onclick="showTab('alltime')">ALL TIME</button>
+            </div>
+            
+            <div class="leaderboard-content">
+                <div class="podium">
+                    <div class="podium-place second">
+                        <div class="place-number">2</div>
+                        <div class="player-name">PIXEL_MASTER</div>
+                        <div class="player-score">12,845</div>
+                    </div>
+                    <div class="podium-place first">
+                        <div class="place-number">1</div>
+                        <div class="player-name">VOXEL_KING</div>
+                        <div class="player-score">15,670</div>
+                        <div class="crown">👑</div>
+                    </div>
+                    <div class="podium-place third">
+                        <div class="place-number">3</div>
+                        <div class="player-name">CUBE_CRUSHER</div>
+                        <div class="player-score">11,290</div>
+                    </div>
+                </div>
+                
+                <div class="rankings-list">
+                    <div class="ranking-item">
+                        <span class="rank">04</span>
+                        <span class="name">BLOCK_BUILDER</span>
+                        <span class="score">9,840</span>
+                    </div>
+                    <div class="ranking-item">
+                        <span class="rank">05</span>
+                        <span class="name">PIXEL_WARRIOR</span>
+                        <span class="score">8,755</span>
+                    </div>
+                    <div class="ranking-item">
+                        <span class="rank">06</span>
+                        <span class="name">CRAFT_LEGEND</span>
+                        <span class="score">7,920</span>
+                    </div>
+                    <div class="ranking-item">
+                        <span class="rank">07</span>
+                        <span class="name">MINE_HERO</span>
+                        <span class="score">7,340</span>
+                    </div>
+                    <div class="ranking-item">
+                        <span class="rank">08</span>
+                        <span class="name">VOXEL_NOOB</span>
+                        <span class="score">6,850</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="your-rank">
+                <div class="rank-card">
+                    <span class="your-position">YOUR RANK: #42</span>
+                    <span class="your-score">SCORE: 3,240</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+</body>
+</html>

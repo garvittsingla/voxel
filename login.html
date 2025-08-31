@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Voxel</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <video id="bg-video" autoplay muted loop>
+        <source src="video.mp4" type="video/mp4">
+    </video>
+    
+    <div class="overlay"></div>
+    
+    <div class="container">
+        <a href="index.html" class="back-btn">← BACK</a>
+        
+        <div class="login-container">
+            <h1 class="page-title">PLAYER LOGIN</h1>
+            
+            <div class="login-form">
+                <div class="input-group">
+                    <label for="username">USERNAME</label>
+                    <input type="text" id="username" placeholder="ENTER USERNAME" maxlength="16">
+                </div>
+                
+                <div class="input-group">
+                    <label for="password">PASSWORD</label>
+                    <input type="password" id="password" placeholder="ENTER PASSWORD">
+                </div>
+                
+                <div class="form-actions">
+                    <button class="action-btn primary">ENTER GAME</button>
+                    <button class="action-btn secondary">CREATE ACCOUNT</button>
+                    <button class="guest-btn">PLAY AS GUEST</button>
+                </div>
+            </div>
+            
+            <div class="server-info">
+                <div class="info-item">
+                    <span class="info-label">SERVER STATUS:</span>
+                    <span class="info-value online">ONLINE</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">PLAYERS:</span>
+                    <span class="info-value">1,337</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">PING:</span>
+                    <span class="info-value">42ms</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+</body>
+</html>
