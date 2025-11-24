@@ -59,6 +59,32 @@ body {
     padding: 2rem;
 }
 
+/* Login Button */
+.login-btn {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    padding: 0.8rem 1.5rem;
+    background: linear-gradient(135deg, #ff0080, #ff8c00);
+    border: 2px solid #fff;
+    border-radius: 8px;
+    color: #fff;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 0.6rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    box-shadow: 0 0 20px rgba(255, 0, 128, 0.6);
+    transition: all 0.3s ease;
+    z-index: 100;
+}
+
+.login-btn:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 0 30px rgba(255, 0, 128, 0.9);
+    background: linear-gradient(135deg, #ff8c00, #ff0080);
+}
+
 /* Enhanced Main Header */
 .main-header {
     text-align: center;
